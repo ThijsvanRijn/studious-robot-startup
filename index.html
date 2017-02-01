@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -13,27 +13,27 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles_navbar.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <title>PopupLed</title>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="50">
     <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top">
+    <nav data-spy="affix" class="navbar navbar-custom navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> Menu <i class="fa fa-bars"></i> </button>
-                <a class="navbar-brand page-scroll" href="#page-top"> <i class="fa fa-play-circle"></i> <span class="light">  </span> </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars" id="nav-ham"></i> </button>
             </div>
             <!--  nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse borderXwidth">
                 <ul class="nav navbar-nav">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li> <a class="page-scroll" href="#">Start</a> </li>
-                    <li> <a class="page-scroll" href="#">Adverteerders</a> </li>
-                    <li> <a class="page-scroll" href="#">Vastgoed</a> </li>
-                    <li> <a class="page-scroll" href="#">Contact</a> </li>
+                    <li> <a class="page-scroll" href="#start">Start</a> </li>
+                    <li> <a class="page-scroll" href="#advert">Adverteerders</a> </li>
+                    <li> <a class="page-scroll" href="#vastgoed">Vastgoed</a> </li>
+                    <li> <a class="page-scroll" href="#contact">Contact</a> </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -41,58 +41,69 @@
         <!-- /.container -->
     </nav>
     <!-- Intro Header -->
-    <header> <img src="img/startuplandingspage1.svg" class="svg" />
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2"> </div>
-            </div>
-        </div>
-    </header>
     <div class="container-fluid">
-        <article>
-            <div class="page " id="services">
+        <header>
+            <div class="row headers1">
+                <div class="col-sm-12 hidden-xs"> <img src="img/startuplandingspage1.svg" class="svg" alt="Buildings" /> </div>
+            </div>
+            <div class="row headers1">
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg"> <img src="img/startuplandingspage2.svg" class="svg" alt="Buildings" /> </div>
+            </div>
+        </header>
+        <article id="start">
+            <div class="page">
                 <div class="content container">
                     <div class="row ">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <section class="service col-sm-4 "> <img src="img/huis1.svg" class="svg1" alt="icon" />
+                        <div class="col-xs-12">
+                            <div class="row start__flex-wrapper">
+                                <section class="service col-sm-4 ">
+                                    <div class="row">
+                                        <div class="hidden-xs"> <img src="img/huis1.svg" class="svg1" alt="icon" /> </div>
+                                        <div class="hidden-sm hidden-md hidden-lg"> <img src="img/huis2.svg" class="svg1" alt="icon" /> </div>
+                                    </div>
                                     <h3 class="middle">Oplossing</h3>
                                     <p>PopUpLED creëert oplossingen voor winkelgebieden, waarbij iedereen profiteert. Wij nemen leegstaande winkelpanden onder handen en plaatsen er hoogwaardige, interactieve LED-schermen in de etalages. Hierdoor veranderen de winkels in 'no-time' in aantrekkelijke objecten voor zowel potentiële huurders als voorbijgangers.</p>
                                 </section>
-                                <section class="service col-sm-4  "> <img src="img/huis2.svg" class="svg1" alt="icon" />
+                                <section class="service col-sm-4 ">
+                                    <div class="row">
+                                        <div class="hidden-xs"> <img src="img/huis2.svg" class="svg1" alt="icon" /> </div>
+                                    </div>
                                     <h3 class="middle">Mogelijkheden</h3>
                                     <p>Als voorbijganger kunt u bijvoorbeeld interactieve games spelen, genieten van lokale kunst, en geattendeerd worden op lokale evenementen. Iedereen krijgt ruimte in onze digitale etalage. Samen met u zorgt PopUpLED er voor dat de winkelstraat weer levendig wordt en dat offline winkelen weer een beleving wordt.</p>
-                                    <button class="btn btn-custom" type="button"> Neem contact op </button>
                                 </section>
-                                <section class="service col-sm-4 "> <img src="img/huis3.svg" class="svg1" alt="icon" />
+                                <section class="service col-sm-4 ">
+                                    <div class="row">
+                                        <div class="hidden-xs"> <img src="img/huis3.svg" class="svg1" alt="icon" /> </div>
+                                    </div>
                                     <h3 class="middle">Interactie</h3>
                                     <p>Als voorbijganger kunt u bijvoorbeeld interactieve games spelen, genieten van lokale kunst, en geattendeerd worden op lokale evenementen. Iedereen krijgt ruimte in onze digitale etalage. Samen met u zorgt PopUpLED er voor dat de winkelstraat weer levendig wordt en dat offline winkelen weer een beleving wordt.</p>
                                 </section>
+                                <div class="col-xs-12 col-sm-4 col-sm-offset-4 flex-button"> <a class="btn btn-custom flex-button__button" href="#contact" id="model-footer__button--op"> Neem contact op </a> </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        <article>
+        <article id="advert">
             <div class="page1">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-xs-12  ">
                         <section>
                             <h2 class="advert">Adverteerders</h2> </section>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-xs-12 ">
                         <div class="row">
-                            <div class="col-sm-6 col-sm-offset-3">
+                            <div class="col-xs-12  col-sm-8 col-sm-offset-2">
                                 <p> PopUpLED biedt u de kans om extra etalageruimte voor uw winkel te creëren. Hoe?
                                     <br> Wij hebben op A1 locaties in winkelcentra enorme LED-schermen geplaatst in te huur staande winkels.
                                     <br> Op die schermen kunt u uw aanbiedingen en reclames laten zien aan het passerende publiek. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-xs-12 ">
                         <div class="row">
-                            <div class="col-sm-6 col-sm-offset-3">
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                                 <p> Grotere etalage nodig?
                                     <br> PopUpLED plaatst grote LED-beeldschermen in leegstaande winkels.
                                     <br> Op die schermen kunnen we advertenties vertonen. Ook voor uw bedrijf.
@@ -103,46 +114,48 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-xs-12  ">
                         <div class="row">
-                            <div class="col-sm-12 ">
+                            <div class="col-xs-12 ">
                                 <h3 class="timeslot">Adverteren op slechts één timeslot geeft u al de volgende resultaten. </h3> </div>
                         </div>
                     </div>
-                    <div class="content container">
-                        <div class="col-sm-12">
-                            <div class="row">
-                                <section class="service col-sm-4 ">
-                                    <h3 class="number">1008</h3>
-                                    <p class="tekstcenter">Aantal minuten
-                                        <br> per week</p>
-                                </section>
-                                <section class="service col-sm-4 ">
-                                    <h3 class="number">4920</h3>
-                                    <p class="tekstcenter">Aantal vertoningen
-                                        <br> per week</p>
-                                </section>
-                                <section class="service col-sm-4 ">
-                                    <h3 class="number">385000</h3>
-                                    <p class="tekstcenter">Aantal voorbijgangers
-                                        <br> per week</p>
-                                </section>
+                    <div class="row">
+                        <div class="content container">
+                            <div class="col-xs-12 ">
+                                <div class="row">
+                                    <section class="service col-xs-12 col-sm-4 ">
+                                        <h3 class="number">1008</h3>
+                                        <p class="tekstcenter">Aantal minuten
+                                            <br> per week</p>
+                                    </section>
+                                    <section class="service col-xs-12 col-sm-4 ">
+                                        <h3 class="number">4920</h3>
+                                        <p class="tekstcenter">Aantal vertoningen
+                                            <br> per week</p>
+                                    </section>
+                                    <section class="service col-xs-12 col-sm-4">
+                                        <h3 class="number">385000</h3>
+                                        <p class="tekstcenter">Aantal voorbijgangers
+                                            <br> per week</p>
+                                    </section>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        <article>
+        <article id="vastgoed">
             <div class="page2">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-xs-12 ">
                         <section>
                             <h2 class="advert">Vastgoedeigenaars</h2> </section>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-xs-12">
                         <div class="row">
-                            <div class="col-sm-12 flex-center">
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                                 <p> PopUpLED plaatst een hoogwaardig LED-scherm in de etalage van uw pand. In combinatie met verlichting zorgt
                                     <br> dit voor een aantrekkelijk gezicht waarbij wij uiteraard het karakter en de uitstraling van het pand intact laten.
                                     <br> Op het scherm worden onder meer advertenties getoond van (lokale) ondernemers. U kunt door middel van het
@@ -152,79 +165,79 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-xs-12">
                         <div class="row">
-                            <div class="col-sm-12 flex-center">
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                                 <p class="links"> Hoe mooi zou het zijn als u met een potentiële huurder voor het pand staat en u met één druk op de knop
                                     <br>verschillende 'artist's impressions' van het object in verhuurde toestand kunt laten zien? Daarnaast is er
                                     <br>uiteraard de mogelijkheid om een andere bedrijfsboodschap te communiceren. </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-xs-12 ">
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-xs-12 ">
                                 <h3 class="timeslot1">Hoe gaan wij te werk?</h3> </div>
                         </div>
                     </div>
-                    <div class="content container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <section class="col-sm-4 service "> <img src="img/keystart.svg" class="svg2" alt="icon" />
-                                    <h3 class="icons">Sleutel</h3>
-                                    <p class="tekstcenter">We hebben toegang nodig tot het
-                                        <br> pand om ons scherm in de etalage te
-                                        <br> kunnen opstellen.</p>
-                                </section>
-                                <section class="col-sm-4 service "> <img src="img/keystart1.svg" class="svg2" alt="icon" />
-                                    <h3 class="icons">Stopcontact</h3>
-                                    <p class="tekstcenter">Om het scherm te kunnen gebruiken
-                                        <br> hebben we stroom nodig.</p>
-                                </section>
-                                <section class="col-sm-4 service"> <img src="img/keystart2.svg" class="svg2" alt="icon" />
-                                    <h3 class="icons">Deal</h3>
-                                    <p class="tekstcenter">Uw pand is nu gereed om weer
-                                        <br> een hotspot te worden!</p>
-                                </section>
+                    <div class="col-xs-12">
+                        <div class="content container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <section class="col-xs-12 col-sm-4 service "> <img src="img/keystart.svg" class="svg2" alt="icon" />
+                                        <h3 class="icons">Sleutel</h3>
+                                        <p class="tekstcenter">We hebben toegang nodig tot het
+                                            <br> pand om ons scherm in de etalage te
+                                            <br> kunnen opstellen.</p>
+                                    </section>
+                                    <section class="col-xs-12 col-sm-4 service "> <img src="img/keystart1.svg" class="svg2" alt="icon" />
+                                        <h3 class="icons">Stopcontact</h3>
+                                        <p class="tekstcenter">Om het scherm te kunnen gebruiken
+                                            <br> hebben we stroom nodig.</p>
+                                    </section>
+                                    <section class="col-xs-12 col-sm-4 service"> <img src="img/keystart2.svg" class="svg2" alt="icon" />
+                                        <h3 class="icons">Deal</h3>
+                                        <p class="tekstcenter">Uw pand is nu gereed om weer
+                                            <br> een hotspot te worden!</p>
+                                    </section>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
-        
-     
-       
-           
-            
-             
-         <article> 
+        <article id="contact">
             <div class="page3">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-xs-12">
                         <div class="row">
-                            <div class="col-lg-6 col-lg-offset-1 contact">
+                            <div class="col-xs-12 col-sm-7 col-sm-offset-1  col-xs-offset-0 col-md-8 col-md-offset-1 contact">
                                 <h3 class="meerinfo"> Meer Informatie?</h3>
                                 <p class="info1"> Als u meer informatie over ons wilt ontvangen. Wij staan u graag te woord,
                                     <br>laat hier uw bericht achter en wij bellen u terug. </p>
                                 <div>
                                     <div class="form-group">
                                         <label class="sr-only" for="inlineFormInput">Name</label>
-                                        <input type="text" class="form-control" id="inlineFormInput" placeholder="Naam"> </div>
+                                        <input type="text" class="form-control" placeholder="Naam"> </div>
                                     <div class="form-group1">
                                         <label class="sr-only" for="inlineFormInput">Name</label>
                                         <input type="text" class="form-control" id="inlineFormInput" placeholder="Telefoonnummer"> </div>
                                     <div class="form-group2">
                                         <label class="sr-only" for="comment">Comment</label>
-                                        <textarea class="form-control" rows="5" id="comment" placeholder="Laat hier je bericht achter"></textarea>
-                                    </div>
-                                    <button class="btn btn-custom1" type="button"> Verstuur </button>
-                                </div>
+                                        <textarea class="form-control noresize" rows="5" id="comment" placeholder="Laat hier je bericht achter"></textarea>
+                                    </div> <a data-toggle="modal" href="#normalModal" class="btn btn-custom1" id="model-footer__button--verstuur">Verstuur</a> </div>
                             </div>
-                            <div class="col-lg-2 hehe">
+                            <div class="col-xs-12 col-sm-3 col-md-2 hehe">
                                 <div class="henkie">
-                                
-                                 
+                                    <h4 class="email"> Email</h4>
+                                    <p class="email1">info@popupled.nl</p>
+                                    <h4 class="telefoon">Telefoon</h4>
+                                    <p class="telefoon1">06-10520429</p>
+                                    <h4 class="adres">Adres</h4>
+                                    <p class="adres1">Meikeverstraat 9 A 02,
+                                        <br>3061 VH Rotterdam
+                                        <br>Nederland </p>
                                 </div>
                             </div>
                         </div>
@@ -232,14 +245,41 @@
                 </div>
             </div>
         </article>
-        
-        
-        
-        
-        
+        <article>
+            <div class="page4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="social-network social-circle" id="social-knop__button">
+                            <li><a href="https://www.facebook.com/popupled/?fref=ts" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/popupled?lang=nl" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/popupled" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div id="normalModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title">U bericht is verzonden</h4> </div>
+                    <div class="modal-body">
+                        <p>Wij nemen zo snel mogelijk contact met U op.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" id="model-footer__button--sluiten">Sluiten</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/hamburger.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/navbar2.js"></script>
 </body>
